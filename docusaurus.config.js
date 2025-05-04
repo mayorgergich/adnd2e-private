@@ -103,7 +103,7 @@ const config = {
               },
               {
                 label: 'Campaigns',
-                to: '/docs/campaigns/mystara-setting-wsc',
+                to: '/docs/campaigns/index',
               },
               {
                 label: 'Monastic Combat',

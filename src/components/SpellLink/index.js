@@ -10,6 +10,15 @@ export function SpellLink({ name, type }) {
     .replace(/[^\w-]/g, '') // Remove special characters
     + `_${type}_spell`;    // Add spell type suffix
   
+  // Temporarily return plain text instead of links until spell pages are created
+  return (
+    <span className="spell-link spell-name">
+      {name}
+    </span>
+  );
+  
+  // Original linking code - uncomment when spell pages are available
+  /*
   // Construct URL path
   let urlPath;
   if (type === 'wizard') {
@@ -25,4 +34,5 @@ export function SpellLink({ name, type }) {
       {name}
     </Link>
   );
+  */
 }
