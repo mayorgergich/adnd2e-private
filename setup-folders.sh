@@ -15,9 +15,7 @@ mkdir -p static/img
 [ -f "updated-character-sheet.md" ] && mv updated-character-sheet.md docs/character/
 [ -f "sebaldus-connection.md" ] && mv sebaldus-connection.md docs/character/
 [ -f "setting-integration.md" ] && mv setting-integration.md docs/character/
-
-# Campaign files
-[ -f "mystara-setting-wsc.md" ] && mv mystara-setting-wsc.md docs/campaigns/
+[ -f "cleric-spells.md" ] && mv cleric-spells.md docs/character/
 
 # Tactics files
 [ -f "monastic-combat.md" ] && mv monastic-combat.md docs/tactics/
