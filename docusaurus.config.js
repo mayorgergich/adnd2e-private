@@ -68,18 +68,21 @@ const config = {
             sidebarId: 'characterSidebar',
             position: 'left',
             label: 'Character',
+            to: '/docs/character/updated-character-sheet',
           },
           {
             type: 'docSidebar',
             sidebarId: 'campaignsSidebar',
             position: 'left',
             label: 'Campaigns',
+            to: '/docs/campaigns/index',
           },
           {
             type: 'docSidebar',
             sidebarId: 'tacticsSidebar', 
             position: 'left',
             label: 'Tactics',
+            to: '/docs/tactics/tactical-guide',
           },
           {
             href: 'https://github.com/mayorgergich/adnd2e-private',
