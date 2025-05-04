@@ -75,7 +75,7 @@ const config = {
             sidebarId: 'campaignsSidebar',
             position: 'left',
             label: 'Campaigns',
-            to: '/docs/campaigns/index',
+            to: '/docs/campaigns',
           },
           {
             type: 'docSidebar',
@@ -103,7 +103,7 @@ const config = {
               },
               {
                 label: 'Campaigns',
-                to: '/docs/campaigns/index',
+                to: '/docs/campaigns',
               },
               {
                 label: 'Monastic Combat',

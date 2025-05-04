@@ -1,8 +1,9 @@
 ---
-id: index
+id: campaigns-overview
 title: AD&D 2E Campaigns
 sidebar_label: Campaigns Overview
 sidebar_position: 1
+slug: /campaigns
 ---
 
 # Campaigns Overview
