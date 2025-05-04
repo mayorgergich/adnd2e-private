@@ -757,7 +757,7 @@ NPCs connected to your religious life:
 - Incorporate eastern understanding of body energy systems
 - Conclude with standard blessing or prayer
 
-<TabItem>
+</TabItem>
 
 <TabItem value="texts" label="Sacred Texts">
 
@@ -1195,4 +1195,12 @@ Items that genuinely integrate both spiritual traditions:
 - Includes both eastern diagrams and Sebaldus prayers
 - Represents your authentic spiritual journey
 
-\*\*Meditation
+**Meditation Icon:**
+
+- Combines Sebaldus imagery with eastern mandala design
+- Used as focus for both prayer and meditation
+- Contains hidden symbols meaningful in both traditions
+- Serves as bridge between different aspects of your spirituality
+
+</TabItem>
+</Tabs>
