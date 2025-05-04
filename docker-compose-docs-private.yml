@@ -28,7 +28,7 @@ services:
     volumes:
       - /opt/adnd2e-private:/app
       - /etc/localtime:/etc/localtime:ro
-    command: sh -c "cd /app && npm run build && npm run serve -- --port 3030"
+    command: sh -c "cd /app && npm install && npm run build && npm run serve -- --port 3030"
 
 networks:
   saltbox:
