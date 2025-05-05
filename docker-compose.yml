@@ -2,21 +2,23 @@ version: "3.8"
 
 services:
   adnd2e-private:
-    image: private
+    image: mediawiki:latest
     container_name: adnd2e-private
     hostname: adnd2e-private
     restart: unless-stopped
     environment:
-      - private_DB_TYPE=mysql
-      - private_DB_HOST=mariadb
-      - private_DB_NAME=saltbox
-      - private_DB_USER=pawneemayor
-      - private_DB_PASSWORD=password321
+      - MEDIAWIKI_DB_TYPE=mysql
+      - MEDIAWIKI_DB_HOST=mariadb
+      - MEDIAWIKI_DB_NAME=saltbox
+      - MEDIAWIKI_DB_USER=pawneemayor
+      - MEDIAWIKI_DB_PASSWORD=password321
     volumes:
-      - /opt/adnd2e-private/images:/var/www/html/images
-      - /opt/adnd2e-private/LocalSettings.php:/var/www/html/LocalSettings.php
+      - ./wiki:/var/www/html
+      - ./images:/var/www/html/images
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php
       - /etc/localtime:/etc/localtime:ro
-    command: apache2-foreground
+    depends_on:
+      - mariadb
     networks:
       - saltbox
     labels:
@@ -34,6 +36,23 @@ services:
       traefik.http.routers.adnd2e-private.tls.options: securetls@file
       traefik.http.services.adnd2e-private.loadbalancer.server.port: 80
 
+  mariadb:
+    image: mariadb:10.6
+    container_name: adnd2e-private-db
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=saltbox
+      - MYSQL_USER=pawneemayor
+      - MYSQL_PASSWORD=password321
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - saltbox
+
 networks:
   saltbox:
     external: true
+
+volumes:
+  mariadb_data:
