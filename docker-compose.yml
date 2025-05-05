@@ -6,8 +6,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/app
-      - /app/node_modules
+      - /opt/adnd2e-private:/opt/adnd2e-private:delegated
+      - /opt/adnd2e-private/node_modules
+      - /opt/adnd2e-private/.docusaurus
     environment:
       - NODE_ENV=production
+    user: "1000:1000" # This should match the appuser:appgroup IDs
     command: npm run build
