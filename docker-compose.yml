@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  docusaurus:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+    command: npm run build
