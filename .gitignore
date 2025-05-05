@@ -1,0 +1,63 @@
+# Environment
+.env
+*.env
+
+# Folders to ignore
+wikiteam3-env/
+adnd2e.fandom.com-20250505-wikidump/
+
+# System files
+.DS_Store
+
+# Docker specific
+.docker/
+docker-compose.override.yml
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+*_old
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Database dumps
+*.sql
+*.sqlite
+*.sqlite3
+
+# MediaWiki specific
+/images/*
+!/images/.gitkeep
+/cache/*
+!/cache/.gitkeep
+/temp/*
+!/temp/.gitkeep
+/extensions/*
+!/extensions/.gitkeep
+/skins/*
+!/skins/.gitkeep
+/vendor/
+composer.lock
+
+# Local configuration
+LocalSettings.php
+LocalSettings.local.php
+
+# Logs
+*.log
+logs/
+debug.log
+
+# Generated documentation
+docs/generated/ 
