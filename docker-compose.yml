@@ -17,13 +17,10 @@ services:
       - ./images:/var/www/html/images
       - ./LocalSettings.php:/var/www/html/LocalSettings.php
       - /etc/localtime:/etc/localtime:ro
-    command: >
-      bash -c "echo 'ServerName localhost' >> /etc/apache2/apache2.conf && apache2-foreground"
     depends_on:
       - mariadb
     networks:
       - saltbox
-      - traefik
     labels:
       com.github.saltbox.saltbox_managed: true
       traefik.enable: true
@@ -55,8 +52,6 @@ services:
 
 networks:
   saltbox:
-    external: true
-  traefik:
     external: true
 
 volumes:
