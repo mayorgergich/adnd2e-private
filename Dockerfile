@@ -21,5 +21,8 @@ RUN chown -R appuser:appgroup /opt/adnd2e-private
 # Switch to non-root user
 USER appuser
 
-# Build the application
-CMD ["npm", "run", "build"] 
+# Expose port
+EXPOSE 3030
+
+# Start the application
+CMD ["npm", "run", "start", "--", "--host", "0.0.0.0"] 
