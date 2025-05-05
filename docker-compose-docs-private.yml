@@ -4,6 +4,8 @@ services:
     container_name: adnd2e-private
     image: node:18-alpine # Or use a dedicated Docusaurus image
     hostname: adnd2e-private
+    ports:
+      - "3030:3030"
     environment:
       - PUID=1000
       - PGID=1000
@@ -28,7 +30,7 @@ services:
     volumes:
       - /opt/adnd2e-private:/app
       - /etc/localtime:/etc/localtime:ro
-    command: sh -c "cd /app && npm install && npm run build && npm run serve -- --port 3030"
+    command: sh -c "cd /app && npm install && npm run fetch-remote && npm run build && npm run serve -- --port 3030"
 
 networks:
   saltbox:
