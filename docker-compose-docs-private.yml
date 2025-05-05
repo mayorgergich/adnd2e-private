@@ -30,7 +30,12 @@ services:
     volumes:
       - /opt/adnd2e-private:/app
       - /etc/localtime:/etc/localtime:ro
-    command: sh -c "cd /app && npm install && npm run fetch-remote && npm run build && npm run serve -- --port 3030"
+    command: >
+      sh -c "cd /app && 
+      npm install && 
+      mkdir -p docs/reference/classes docs/reference/races docs/reference/spells/wizard docs/reference/spells/priest docs/reference/proficiencies && 
+      npm run build && 
+      npm run serve -- --port 3030"
 
 networks:
   saltbox:

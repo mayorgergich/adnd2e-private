@@ -60,6 +60,8 @@ const config = {
         name: 'adnd2e-wiki',
         // Automatically create required folders
         createFolders: true,
+        // Default output directory for CLI commands
+        defaultOutDir: 'docs/reference',
         // You can have multiple sources
         sources: [
           {
