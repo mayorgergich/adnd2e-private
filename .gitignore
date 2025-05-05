@@ -3,10 +3,14 @@
 
 # Production
 /build
+/dist
 
 # Generated files
 .docusaurus
 .cache-loader
+*.log
+*.tmp
+*.temp
 
 # Misc
 .DS_Store
@@ -14,6 +18,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
@@ -26,6 +31,23 @@ yarn-error.log*
 # IDE
 .idea
 .vscode
+*.swp
+*.swo
+.project
+.classpath
+.settings/
 
 # OS specific
-Thumbs.db 
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Temporary files
+*.bak
+*.backup
+*~ 

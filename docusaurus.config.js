@@ -62,6 +62,12 @@ const config = {
         createFolders: true,
         // Default output directory for CLI commands
         defaultOutDir: 'docs/reference',
+        // Required output directory
+        outDir: 'docs/reference',
+        // Required documents parameter (empty as we're using sources)
+        documents: [],
+        // Required source base URL
+        sourceBaseUrl: 'https://adnd2e.fandom.com/wiki/',
         // You can have multiple sources
         sources: [
           {
