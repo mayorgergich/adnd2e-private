@@ -9,6 +9,8 @@ mkdir -p src/pages
 mkdir -p src/components/HomepageFeatures
 mkdir -p src/components/SpellLink
 mkdir -p static/img
+mkdir -p docs/classes
+mkdir -p docs/races
 
 # Move current markdown files to the correct directories
 # Character files
@@ -105,6 +107,10 @@ Use the sidebar navigation to explore different sections:
 - **Tactics** - Combat tactics and eastern monastic techniques integration
 EOF
 fi
+
+# Create placeholder files
+touch docs/classes/index.md
+touch docs/races/index.md
 
 echo "Directory structure set up successfully!"
 echo "Next steps:"

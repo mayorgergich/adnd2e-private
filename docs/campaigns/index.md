@@ -25,7 +25,7 @@ To begin using these campaign resources, navigate through the sidebar to find sp
 
 ## Integration with Character Options
 
-The campaign materials provided here are designed to work seamlessly with the character options detailed in the [character section](/docs/character/). For specific guidance on integrating characters with campaign settings, see the [Setting Integration](/docs/character/setting-integration) page.
+The campaign materials provided here are designed to work seamlessly with the character options detailed in the [character section](/docs/characters/). For specific guidance on integrating characters with campaign settings, see the [Setting Integration](/docs/characters/setting-integration) page.
 
 ## Creating Your Own Campaign
 
